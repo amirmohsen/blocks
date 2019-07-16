@@ -1,0 +1,62 @@
+{
+  "name": "blocks",
+  "private": true,
+  "workspaces": [
+    "packages/*"
+  ],
+  "repository": {
+    "url": "https://github.com/amirmohsen/blocks"
+  },
+  "scripts": {
+    "lint": "npm run pretty && npm run lint:js && npm run lint:css",
+    "lint:js": "eslint --ext .js,.ts,.tsx --fix packages/ scripts/",
+    "lint:css": "stylelint --allow-empty-input --fix \"packages/**/*.{ts,tsx}\"",
+    "pretty": "prettier --write \"{packages,scripts}/**/*.{ts,tsx}\"",
+    "dev": "cross-env TS_NODE_PROJECT=\"./scripts/webpack/tsconfig-for-webpack-config.json\" webpack-dev-server --config scripts/webpack/config.dev.ts --open"
+  },
+  "devDependencies": {
+    "@babel/core": "^7.5.4",
+    "@babel/preset-env": "^7.5.4",
+    "@babel/preset-react": "^7.0.0",
+    "@babel/preset-typescript": "^7.3.3",
+    "@types/node": "^12.6.5",
+    "@types/webpack": "^4.4.35",
+    "@types/webpack-dev-server": "^3.1.7",
+    "@typescript-eslint/eslint-plugin": "^1.12.0",
+    "@typescript-eslint/parser": "^1.12.0",
+    "babel-loader": "^8.0.6",
+    "babel-plugin-styled-components": "^1.10.6",
+    "clean-webpack-plugin": "^3.0.0",
+    "cross-env": "^5.2.0",
+    "eslint": "^5.16",
+    "eslint-config-airbnb": "^17.1.1",
+    "eslint-config-prettier": "^6.0.0",
+    "eslint-plugin-import": "^2.18.0",
+    "eslint-plugin-jsx-a11y": "^6.2",
+    "eslint-plugin-prettier": "^3.1.0",
+    "eslint-plugin-react": "^7.14",
+    "eslint-plugin-react-hooks": "^1.6.1",
+    "html-webpack-plugin": "^3.2.0",
+    "lerna": "^3.15.0",
+    "prettier": "1.18.2",
+    "react": "^16.8.6",
+    "react-dom": "^16.8.6",
+    "styled-components": "^4.3.2",
+    "stylelint": "^10.1.0",
+    "stylelint-config-prettier": "^5.2.0",
+    "stylelint-config-standard": "^18.3.0",
+    "stylelint-config-styled-components": "^0.1.1",
+    "stylelint-prettier": "^1.1.1",
+    "stylelint-processor-styled-components": "^1.8.0",
+    "ts-node": "^8.3.0",
+    "tsconfig-paths": "^3.8.0",
+    "typescript": "^3.5.3",
+    "webpack": "^4.35.3",
+    "webpack-cli": "^3.3.6",
+    "webpack-dev-server": "^3.7.2"
+  },
+  "dependencies": {
+    "@types/react": "^16.8.23",
+    "@types/react-dom": "^16.8.4"
+  }
+}

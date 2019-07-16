@@ -1,0 +1,26 @@
+{
+  "compilerOptions": {
+    "target": "esnext",
+    "moduleResolution": "node",
+    "allowJs": true,
+    "noEmit": true,
+    "strict": true,
+    "esModuleInterop": true,
+    "allowSyntheticDefaultImports": true,
+    "suppressImplicitAnyIndexErrors": true,
+    "jsx": "react",
+    "module": "esnext",
+    "lib": [
+      "dom",
+      "esnext"
+    ],
+    "declaration": true,
+    "sourceMap": true
+  },
+  "include": [
+    "packages"
+  ],
+  "exclude": [
+    "node_modules"
+  ]
+}

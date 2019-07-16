@@ -1,0 +1,29 @@
+{
+  "name": "@blocks/docs",
+  "version": "0.0.0",
+  "description": "> TODO: description",
+  "author": "Amir Mohsen Abdolrazaghi <amirmohsen.a@gmail.com>",
+  "homepage": "https://github.com/amirmohsen/blocks#readme",
+  "license": "MIT",
+  "main": "src/index.tsx",
+  "publishConfig": {
+    "access": "public"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/amirmohsen/blocks.git"
+  },
+  "scripts": {
+    "test": "echo \"Error: run tests from root\" && exit 1"
+  },
+  "bugs": {
+    "url": "https://github.com/amirmohsen/blocks/issues"
+  },
+  "dependencies": {
+    "@blocks/base-button": "^0.0.0",
+    "@types/styled-components": "^4.1.18",
+    "react": "^16.8.6",
+    "react-dom": "^16.8.6",
+    "styled-components": "^4.3.2"
+  }
+}
