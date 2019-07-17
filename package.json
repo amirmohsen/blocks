@@ -12,9 +12,14 @@
     "lint:js": "eslint --ext .js,.ts,.tsx --fix packages/ scripts/",
     "lint:css": "stylelint --allow-empty-input --fix \"packages/**/*.{ts,tsx}\"",
     "pretty": "prettier --write \"{packages,scripts}/**/*.{ts,tsx}\"",
-    "dev": "cross-env TS_NODE_PROJECT=\"./scripts/webpack/tsconfig-for-webpack-config.json\" webpack-dev-server --config scripts/webpack/config.dev.ts --open"
+    "dev": "cross-env TS_NODE_PROJECT=\"./scripts/webpack/tsconfig-for-webpack-config.json\" webpack-dev-server --config scripts/webpack/config.dev.ts --open",
+    "rm:lib": "lerna run --parallel rm:lib",
+    "build": "lerna run --parallel build",
+    "prepublishOnly": "lerna run build",
+    "publish": "lerna publish"
   },
   "devDependencies": {
+    "@babel/cli": "^7.5.5",
     "@babel/core": "^7.5.4",
     "@babel/preset-env": "^7.5.4",
     "@babel/preset-react": "^7.0.0",

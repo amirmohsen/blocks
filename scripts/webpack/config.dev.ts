@@ -1,8 +1,9 @@
 import path from 'path';
 import HtmlWebpackPlugin from 'html-webpack-plugin';
 import { CleanWebpackPlugin } from 'clean-webpack-plugin';
+import commonBabelConfig from '../babel/common.config';
 
-module.exports = {
+export default {
   mode: 'development',
   entry: {
     app: './packages/docs/src/index.tsx'
@@ -31,17 +32,7 @@ module.exports = {
         test: /\.tsx?$/,
         exclude: /node_modules/,
         loader: 'babel-loader',
-        options: {
-          presets: ['@babel/preset-env', '@babel/preset-typescript', '@babel/preset-react'],
-          plugins: [
-            [
-              'babel-plugin-styled-components',
-              {
-                displayName: false
-              }
-            ]
-          ]
-        }
+        options: commonBabelConfig()
       }
     ]
   }
