@@ -16,7 +16,7 @@
     "rm:lib": "lerna run --parallel rm:lib",
     "build": "lerna run --parallel build",
     "prepublishOnly": "lerna run build",
-    "publish": "lerna publish"
+    "publish:packages": "lerna publish"
   },
   "devDependencies": {
     "@babel/cli": "^7.5.5",
