@@ -1,1 +1,1 @@
-# `@blocks/base-button`
+# `@composed-components/base-button`

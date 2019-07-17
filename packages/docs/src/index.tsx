@@ -1,8 +1,8 @@
 import React from 'react';
 import ReactDOM from 'react-dom';
-import BaseButton from '@blocks/base-button';
+import BaseButton from '@composed-components/base-button';
 
 ReactDOM.render(
   <BaseButton>Base Button</BaseButton>,
-  document.getElementById('blocks-docs-wrapper')
+  document.getElementById('composed-components-docs-wrapper')
 );

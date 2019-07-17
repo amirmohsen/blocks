@@ -1,1 +1,1 @@
-# `@blocks/docs`
+# `@composed-components/docs`

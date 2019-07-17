@@ -14,7 +14,7 @@ module.exports = {
   plugins: [
     new CleanWebpackPlugin(),
     new HtmlWebpackPlugin({
-      title: 'Blocks Docs',
+      title: 'Composed Components Docs',
       template: path.join(__dirname, 'index.html')
     })
   ],

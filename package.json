@@ -1,11 +1,11 @@
 {
-  "name": "blocks",
+  "name": "composed-components",
   "private": true,
   "workspaces": [
     "packages/*"
   ],
   "repository": {
-    "url": "https://github.com/amirmohsen/blocks"
+    "url": "https://github.com/composed-components/composed-components"
   },
   "scripts": {
     "lint": "npm run pretty && npm run lint:js && npm run lint:css",

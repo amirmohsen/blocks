@@ -1,9 +1,9 @@
 {
-  "name": "@blocks/docs",
+  "name": "@composed-components/docs",
   "version": "0.0.0",
   "description": "> TODO: description",
   "author": "Amir Mohsen Abdolrazaghi <amirmohsen.a@gmail.com>",
-  "homepage": "https://github.com/amirmohsen/blocks#readme",
+  "homepage": "https://github.com/composed-components/composed-components#readme",
   "license": "MIT",
   "main": "src/index.tsx",
   "publishConfig": {
@@ -11,16 +11,16 @@
   },
   "repository": {
     "type": "git",
-    "url": "git+https://github.com/amirmohsen/blocks.git"
+    "url": "git+https://github.com/composed-components/composed-components.git"
   },
   "scripts": {
     "test": "echo \"Error: run tests from root\" && exit 1"
   },
   "bugs": {
-    "url": "https://github.com/amirmohsen/blocks/issues"
+    "url": "https://github.com/composed-components/composed-components/issues"
   },
   "dependencies": {
-    "@blocks/base-button": "^0.0.0",
+    "@composed-components/base-button": "^0.0.0",
     "@types/styled-components": "^4.1.18",
     "react": "^16.8.6",
     "react-dom": "^16.8.6",
