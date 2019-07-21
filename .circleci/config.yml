@@ -72,6 +72,7 @@ jobs:
           name: Publish packages
           command: |
             echo $GH_TOKEN
+            git remote -v
             # mkdir -p ~/.ssh
             # chmod 0700 ~/.ssh
             # git config --global user.email "circlecibot@circlecibot.com"
@@ -84,20 +85,21 @@ workflows:
   test-build-publish:
     jobs:
       - install
-      - lint:
-          requires:
-            - install
-      - test:
-          requires:
-            - install
-      - build:
-          requires:
-            - install
+      # - lint:
+      #     requires:
+      #       - install
+      # - test:
+      #     requires:
+      #       - install
+      # - build:
+      #     requires:
+      #       - install
       - publish:
           requires:
-            - lint
-            - test
-            - build
+            - install
+            # - lint
+            # - test
+            # - build
           filters:
             branches:
               only: master
