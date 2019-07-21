@@ -6,7 +6,7 @@ defaults: &defaults
     - image: circleci/node:10.16
 
 jobs:
-  test:
+  install:
     <<: *defaults
     steps:
       - checkout
@@ -25,14 +25,6 @@ jobs:
           name: Bootstrap Lerna
           command: yarn bootstrap:ci
 
-      - run:
-          name: Run linting
-          command: yarn lint
-
-      - run:
-          name: Run tests
-          command: yarn test
-
       - save_cache:
           paths:
             - node_modules
@@ -44,6 +36,24 @@ jobs:
           root: ~/repo
           paths:
             - .
+  lint:
+    <<: *defaults
+    steps:
+      - attach_workspace:
+          at: ~/repo
+      - run:
+          name: Run linting
+          command: yarn lint
+
+  test:
+    <<: *defaults
+    steps:
+      - attach_workspace:
+          at: ~/repo
+      - run:
+          name: Run tests
+          command: yarn test
+
   build:
     <<: *defaults
     steps:
@@ -66,12 +76,20 @@ workflows:
   version: 2
   test-build-publish:
     jobs:
-      - test
+      - install
+      - lint:
+          requires:
+            - install
+      - test:
+          requires:
+            - install
       - build:
           requires:
-            - test
+            - install
       - publish:
           requires:
+            - lint
+            - test
             - build
           filters:
             tags:
