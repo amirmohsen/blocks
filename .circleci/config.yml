@@ -71,12 +71,13 @@ jobs:
       - run:
           name: Publish packages
           command: |
-            mkdir -p ~/.ssh
-            chmod 0700 ~/.ssh
-            git config --global user.email "circlecibot@circlecibot.com"
-            git config --global user.name "circlecibot"
-            ssh-keyscan github.com >> ~/.ssh/known_hosts
-            yarn publish:packages
+            echo $GH_TOKEN
+            # mkdir -p ~/.ssh
+            # chmod 0700 ~/.ssh
+            # git config --global user.email "circlecibot@circlecibot.com"
+            # git config --global user.name "circlecibot"
+            # ssh-keyscan github.com >> ~/.ssh/known_hosts
+            # yarn publish:packages
 
 workflows:
   version: 2
