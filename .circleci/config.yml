@@ -70,7 +70,9 @@ jobs:
           at: ~/repo
       - run:
           name: Publish packages
-          command: yarn publish:packages
+          command: |
+            ssh-keyscan github.com >> ~/.ssh/known_hosts
+            yarn publish:packages
 
 workflows:
   version: 2
@@ -92,5 +94,5 @@ workflows:
             - test
             - build
           filters:
-            tags:
+            branches:
               only: master
