@@ -23,7 +23,7 @@ jobs:
 
       - run:
           name: Bootstrap Lerna
-          command: yarn bootstrap:ci
+          command: yarn bootstrap
 
       - save_cache:
           paths:
@@ -93,6 +93,4 @@ workflows:
             - build
           filters:
             tags:
-              only: /^v.*/
-            branches:
-              ignore: /.*/
+              only: master

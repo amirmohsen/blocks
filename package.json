@@ -8,16 +8,16 @@
     "url": "https://github.com/composed-components/composed-components"
   },
   "scripts": {
+    "bootstrap": "lerna bootstrap",
     "lint": "npm run pretty && npm run lint:js && npm run lint:css",
     "lint:js": "eslint --ext .js,.ts,.tsx --fix packages/ scripts/",
     "lint:css": "stylelint --allow-empty-input --fix \"packages/**/*.{ts,tsx}\"",
     "pretty": "prettier --write \"{packages,scripts}/**/*.{ts,tsx}\"",
     "dev": "cross-env TS_NODE_PROJECT=\"./scripts/webpack/tsconfig-for-webpack-config.json\" webpack-dev-server --config scripts/webpack/config.dev.ts --open",
     "rm:lib": "lerna run --parallel rm:lib",
-    "bootstrap:ci": "lerna bootstrap",
     "test": "lerna run --parallel test",
     "build": "lerna run --parallel build",
-    "publish:packages": "lerna publish"
+    "publish:packages": "lerna publish --yes --conventional-commits --create-release github"
   },
   "devDependencies": {
     "@babel/cli": "^7.5.5",
@@ -33,6 +33,7 @@
     "babel-loader": "^8.0.6",
     "babel-plugin-styled-components": "^1.10.6",
     "clean-webpack-plugin": "^3.0.0",
+    "conventional-changelog-cli": "^2.0.21",
     "cross-env": "^5.2.0",
     "eslint": "^5.16",
     "eslint-config-airbnb": "^17.1.1",
