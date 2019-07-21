@@ -71,6 +71,8 @@ jobs:
       - run:
           name: Publish packages
           command: |
+            mkdir -p ~/.ssh
+            chmod 0700 ~/.ssh
             ssh-keyscan github.com >> ~/.ssh/known_hosts
             yarn publish:packages
 
