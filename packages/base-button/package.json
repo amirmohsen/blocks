@@ -15,6 +15,7 @@
     "url": "git+https://github.com/composed-components/composed-components.git"
   },
   "scripts": {
+    "test": "echo 'test'",
     "build": "babel --root-mode upward --extensions \".ts,.tsx\" --ignore **/*.spec.ts,**/*.spec.tsx ./src -d ./lib && cp package.json lib/package.json",
     "rm:lib": "rm -rf ./lib"
   },

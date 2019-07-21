@@ -14,8 +14,9 @@
     "pretty": "prettier --write \"{packages,scripts}/**/*.{ts,tsx}\"",
     "dev": "cross-env TS_NODE_PROJECT=\"./scripts/webpack/tsconfig-for-webpack-config.json\" webpack-dev-server --config scripts/webpack/config.dev.ts --open",
     "rm:lib": "lerna run --parallel rm:lib",
+    "bootstrap:ci": "lerna bootstrap --hoist",
+    "test": "lerna run --parallel test",
     "build": "lerna run --parallel build",
-    "prepublishOnly": "lerna run build",
     "publish:packages": "lerna publish"
   },
   "devDependencies": {
