@@ -23,7 +23,7 @@ jobs:
 
       - run:
           name: Bootstrap Lerna
-          command: yarn bootstrap:ci
+          command: yarn bootstrap
 
       - save_cache:
           paths:
@@ -70,7 +70,9 @@ jobs:
           at: ~/repo
       - run:
           name: Publish packages
-          command: yarn publish:packages
+          command: |
+            ssh-keyscan github.com >> ~/.ssh/known_hosts
+            yarn publish:packages
 
 workflows:
   version: 2
@@ -92,7 +94,5 @@ workflows:
             - test
             - build
           filters:
-            tags:
-              only: /^v.*/
             branches:
-              ignore: /.*/
+              only: master
