@@ -71,7 +71,7 @@ jobs:
       - run:
           name: Publish packages
           command: |
-            echo $GH_TOKEN
+            git remote set-url origin "https://${GH_TOKEN}@github.com/composed-components/composed-components.git"
             git remote -v
             # mkdir -p ~/.ssh
             # chmod 0700 ~/.ssh
