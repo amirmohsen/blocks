@@ -82,7 +82,9 @@ jobs:
             git config --global user.name "circlecibot"
             ssh-keyscan github.com >> ~/.ssh/known_hosts
             npm config set '//registry.npmjs.org/:_authToken' "${NPM_TOKEN}"
-            yarn publish:packages
+            yarn packages:version
+            yarn packages:postversion
+            yarn packages:publish
 
 workflows:
   version: 2
