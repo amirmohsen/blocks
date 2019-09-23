@@ -19,7 +19,7 @@
     "build": "lerna run --parallel build",
     "packages:version": "lerna version --yes --conventional-commits --create-release github",
     "packages:postversion": "lerna run --parallel postver",
-    "packages:publish": "lerna publish --yes"
+    "packages:publish": "lerna publish from-git --yes"
   },
   "devDependencies": {
     "@babel/cli": "^7.5.5",
