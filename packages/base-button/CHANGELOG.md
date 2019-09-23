@@ -3,6 +3,17 @@
 All notable changes to this project will be documented in this file.
 See [Conventional Commits](https://conventionalcommits.org) for commit guidelines.
 
+# [0.1.0-alpha.4](https://github.com/composed-components/composed-components/compare/@composed-components/base-button@0.1.0-alpha.3...@composed-components/base-button@0.1.0-alpha.4) (2019-09-23)
+
+
+### Bug Fixes
+
+* **base-button:** fix config.yml ([ddc8614](https://github.com/composed-components/composed-components/commit/ddc8614))
+
+
+
+
+
 # [0.1.0-alpha.3](https://github.com/composed-components/composed-components/compare/@composed-components/base-button@0.1.0-alpha.2...@composed-components/base-button@0.1.0-alpha.3) (2019-09-23)
 
 
