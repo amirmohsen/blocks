@@ -1,12 +1,10 @@
 {
+  "private": true,
   "name": "@composed-components/docs",
-  "version": "0.1.0-alpha.7",
   "description": "> TODO: description",
+  "license": "MIT",
   "author": "Amir Mohsen Abdolrazaghi <amirmohsen.a@gmail.com>",
   "homepage": "https://github.com/composed-components/composed-components#readme",
-  "license": "MIT",
-  "main": "src/index.tsx",
-  "private": true,
   "repository": {
     "type": "git",
     "url": "git+https://github.com/composed-components/composed-components.git"
@@ -14,11 +12,13 @@
   "bugs": {
     "url": "https://github.com/composed-components/composed-components/issues"
   },
+  "version": "0.1.0-alpha.7",
+  "main": "src/index.tsx",
   "dependencies": {
     "@composed-components/base-button": "^0.1.0-alpha.7",
     "@types/styled-components": "^4.1.18",
-    "react": "^16.8.6",
-    "react-dom": "^16.8.6",
-    "styled-components": "^4.3.2"
+    "react": "^16.9.0",
+    "react-dom": "^16.9.0",
+    "styled-components": "^4.4.0"
   }
 }
