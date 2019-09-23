@@ -1,6 +1,6 @@
 {
   "name": "@composed-components/docs",
-  "version": "0.1.0-alpha.2",
+  "version": "0.1.0-alpha.3",
   "description": "> TODO: description",
   "author": "Amir Mohsen Abdolrazaghi <amirmohsen.a@gmail.com>",
   "homepage": "https://github.com/composed-components/composed-components#readme",
@@ -15,7 +15,7 @@
     "url": "https://github.com/composed-components/composed-components/issues"
   },
   "dependencies": {
-    "@composed-components/base-button": "^0.1.0-alpha.2",
+    "@composed-components/base-button": "^0.1.0-alpha.3",
     "@types/styled-components": "^4.1.18",
     "react": "^16.8.6",
     "react-dom": "^16.8.6",
