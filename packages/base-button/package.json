@@ -1,7 +1,7 @@
 {
   "name": "@composed-components/base-button",
   "version": "0.1.0-alpha.2",
-  "description": "> TODO: description",
+  "description": "Base Button",
   "author": "Amir Mohsen Abdolrazaghi <amirmohsen.a@gmail.com>",
   "homepage": "https://github.com/composed-components/composed-components#readme",
   "license": "MIT",
@@ -16,7 +16,7 @@
   },
   "scripts": {
     "test": "echo 'test'",
-    "build": "babel --root-mode upward --extensions \".ts,.tsx\" --ignore **/*.spec.ts,**/*.spec.tsx ./src -d ./lib && cp package.json lib/package.json",
+    "build": "babel --root-mode upward --extensions \".ts,.tsx\" --ignore **/*.spec.ts,**/*.spec.tsx ./src -d ./lib && cp package.json CHANGELOG.md README.md ./lib",
     "rm:lib": "rm -rf ./lib"
   },
   "bugs": {
