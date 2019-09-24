@@ -12,10 +12,10 @@
   "bugs": {
     "url": "https://github.com/composed-components/composed-components/issues"
   },
-  "version": "0.1.0-alpha.7",
+  "version": "0.1.0-alpha.8",
   "main": "src/index.tsx",
   "dependencies": {
-    "@composed-components/base-button": "^0.1.0-alpha.7",
+    "@composed-components/base-button": "^0.1.0-alpha.8",
     "@types/styled-components": "^4.1.18",
     "react": "^16.9.0",
     "react-dom": "^16.9.0",
