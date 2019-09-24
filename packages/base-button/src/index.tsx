@@ -11,6 +11,7 @@ const BaseButton = styled.button.attrs({
   width: auto;
   max-width: 100%;
   box-sizing: border-box;
+  appearance: none;
 `;
 
 export default BaseButton;
