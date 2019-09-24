@@ -1,31 +1,31 @@
 {
   "name": "@composed-components/base-button",
-  "version": "0.1.0-alpha.7",
   "description": "Base Button",
+  "license": "MIT",
   "author": "Amir Mohsen Abdolrazaghi <amirmohsen.a@gmail.com>",
   "homepage": "https://github.com/composed-components/composed-components#readme",
-  "license": "MIT",
-  "main": "src/index.tsx",
-  "publishConfig": {
-    "access": "public",
-    "directory": "lib"
-  },
   "repository": {
     "type": "git",
     "url": "git+https://github.com/composed-components/composed-components.git"
   },
-  "scripts": {
-    "test": "echo 'test'",
-    "build": "babel --root-mode upward --extensions \".ts,.tsx\" --ignore **/*.spec.ts,**/*.spec.tsx ./src -d ./lib",
-    "postver": "cp package.json CHANGELOG.md README.md ./lib",
-    "rm:lib": "rm -rf ./lib"
-  },
   "bugs": {
     "url": "https://github.com/composed-components/composed-components/issues"
   },
+  "version": "0.1.0-alpha.7",
+  "main": "src/index.tsx",
+  "scripts": {
+    "build": "babel --root-mode upward --extensions \".ts,.tsx\" --ignore **/*.spec.ts,**/*.spec.tsx ./src -d ./lib",
+    "rm:lib": "rm -rf ./lib",
+    "test": "echo 'test'",
+    "postver": "cp package.json CHANGELOG.md README.md ./lib"
+  },
   "peerDependencies": {
-    "react": "^16.8",
-    "react-dom": "^16.8",
-    "styled-components": "^4.3"
+    "react": "^16.9.0",
+    "react-dom": "^16.9.0",
+    "styled-components": "^4.4.0"
+  },
+  "publishConfig": {
+    "access": "public",
+    "directory": "lib"
   }
 }
