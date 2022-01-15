@@ -3,6 +3,17 @@
 All notable changes to this project will be documented in this file.
 See [Conventional Commits](https://conventionalcommits.org) for commit guidelines.
 
+# [0.1.0-alpha.9](https://github.com/composed-components/composed-components/compare/@composed-components/base-button@0.1.0-alpha.8...@composed-components/base-button@0.1.0-alpha.9) (2022-01-15)
+
+
+### Bug Fixes
+
+* linting fixes ([444bebe](https://github.com/composed-components/composed-components/commit/444bebeabb203adecc47bd204c54212abd4e96f7))
+
+
+
+
+
 # [0.1.0-alpha.8](https://github.com/composed-components/composed-components/compare/@composed-components/base-button@0.1.0-alpha.7...@composed-components/base-button@0.1.0-alpha.8) (2019-09-24)
 
 **Note:** Version bump only for package @composed-components/base-button
