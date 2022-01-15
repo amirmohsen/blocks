@@ -16,6 +16,8 @@
   "main": "src/index.tsx",
   "dependencies": {
     "@composed-components/base-button": "^0.1.0-alpha.8",
+    "@composed-components/base-checkbox": "^0.1.0-alpha.1",
+    "@composed-components/base-toggle": "^0.1.0-alpha.1",
     "@types/styled-components": "^5.1.20",
     "react": "^17.0.2",
     "react-dom": "^17.0.2",
