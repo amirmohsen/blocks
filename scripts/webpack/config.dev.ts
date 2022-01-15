@@ -6,25 +6,25 @@ import commonBabelConfig from '../babel/common.config';
 export default {
   mode: 'development',
   entry: {
-    app: './packages/docs/src/index.tsx'
+    app: './packages/docs/src/index.tsx',
   },
   devtool: 'inline-source-map',
   devServer: {
-    contentBase: './dist'
+    static: './dist',
   },
   plugins: [
     new CleanWebpackPlugin(),
     new HtmlWebpackPlugin({
       title: 'Composed Components Docs',
-      template: path.join(__dirname, 'index.html')
-    })
+      template: path.join(__dirname, 'index.html'),
+    }),
   ],
   output: {
     filename: '[name].bundle.js',
-    path: path.resolve(__dirname, 'dist')
+    path: path.resolve(__dirname, 'dist'),
   },
   resolve: {
-    symlinks: true
+    symlinks: true,
   },
   module: {
     rules: [
@@ -32,8 +32,8 @@ export default {
         test: /\.tsx?$/,
         exclude: /node_modules/,
         loader: 'babel-loader',
-        options: commonBabelConfig()
-      }
-    ]
-  }
+        options: commonBabelConfig(),
+      },
+    ],
+  },
 };
