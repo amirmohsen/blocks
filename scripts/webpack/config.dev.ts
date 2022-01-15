@@ -25,6 +25,7 @@ export default {
   },
   resolve: {
     symlinks: true,
+    extensions: ['.js', '.jsx', '.json', '.wasm', '.ts', '.tsx'],
   },
   module: {
     rules: [

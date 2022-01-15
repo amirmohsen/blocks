@@ -1,6 +1,6 @@
 {
-  "name": "@composed-components/base-button",
-  "description": "Base Button",
+  "name": "@composed-components/base-toggle",
+  "description": "Base Toggle",
   "license": "MIT",
   "author": "Amir Mohsen Abdolrazaghi <amirmohsen.a@gmail.com>",
   "homepage": "https://github.com/composed-components/composed-components#readme",
@@ -11,7 +11,7 @@
   "bugs": {
     "url": "https://github.com/composed-components/composed-components/issues"
   },
-  "version": "0.1.0-alpha.9",
+  "version": "0.1.0-alpha.1",
   "main": "src/index.tsx",
   "scripts": {
     "build": "babel --root-mode upward --extensions \".ts,.tsx\" --ignore **/*.spec.ts,**/*.spec.tsx ./src -d ./lib",
@@ -27,5 +27,8 @@
   "publishConfig": {
     "access": "public",
     "directory": "lib"
+  },
+  "dependencies": {
+    "@composed-components/base-checkbox": "^0.1.0-alpha.1"
   }
 }

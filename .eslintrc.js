@@ -2,6 +2,8 @@ module.exports = {
   plugins: ['react-hooks'],
   extends: ['eslint-config-airbnb', 'plugin:prettier/recommended'],
   rules: {
+    'react/jsx-props-no-spreading': ['off'],
+    'import/extensions': ['off'],
     'react/jsx-indent': ['off'],
     'react/jsx-indent-props': ['off'],
     'react/jsx-filename-extension': [
@@ -32,6 +34,8 @@ module.exports = {
         'plugin:prettier/recommended',
       ],
       rules: {
+        'react/jsx-props-no-spreading': ['off'],
+        'import/extensions': ['off'],
         'react/jsx-indent': ['off'],
         'react/jsx-indent-props': ['off'],
         'react/jsx-filename-extension': [
