@@ -4,8 +4,8 @@ module.exports = ({ envOptions = {} } = {}) => ({
     [
       'babel-plugin-styled-components',
       {
-        displayName: false
-      }
-    ]
-  ]
+        displayName: false,
+      },
+    ],
+  ],
 });

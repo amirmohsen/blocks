@@ -1,7 +1,7 @@
 import styled from 'styled-components';
 
 const BaseButton = styled.button.attrs({
-  type: 'button'
+  type: 'button',
 })`
   display: block;
   background: none;
