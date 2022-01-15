@@ -15,7 +15,7 @@ const BaseStyledCheckbox = styled.input`
 
 export type BaseCheckboxProps = Omit<InputHTMLAttributes<HTMLInputElement>, 'type'>;
 
-function BaseCheckbox<T>(props: BaseCheckboxProps) {
+function BaseCheckbox(props: BaseCheckboxProps) {
   return <BaseStyledCheckbox {...(props as unknown)} type="checkbox" />;
 }
 
