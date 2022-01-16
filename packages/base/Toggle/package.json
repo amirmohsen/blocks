@@ -29,6 +29,10 @@
     "directory": "lib"
   },
   "dependencies": {
-    "@composed-components/base-checkbox": "^0.1.0-alpha.3"
+    "@composed-components/base-checkbox": "^0.1.0-alpha.3",
+    "json-stringify-safe": "^5.0.1"
+  },
+  "devDependencies": {
+    "@types/json-stringify-safe": "^5.0.0"
   }
 }

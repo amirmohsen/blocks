@@ -1,17 +1,10 @@
 import styled from 'styled-components';
+import { hideNativeAppearance } from '@composed-components/base-util-shared-styles';
 
 const BaseButton = styled.button.attrs({
   type: 'button',
 })`
-  display: block;
-  background: none;
-  border: none;
-  padding: 0;
-  margin: 0;
-  width: auto;
-  max-width: 100%;
-  box-sizing: border-box;
-  appearance: none;
+  ${hideNativeAppearance}
 `;
 
 export default BaseButton;

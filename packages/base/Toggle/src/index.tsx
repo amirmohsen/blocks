@@ -1,5 +1,8 @@
-import React, { ChangeEventHandler, useCallback } from 'react';
-import BaseCheckbox, { BaseCheckboxProps } from '@composed-components/base-checkbox';
+import React, { ChangeEvent, useCallback } from 'react';
+import BaseCheckbox, {
+  BaseCheckboxOnChangeHandlerParams,
+  BaseCheckboxProps,
+} from '@composed-components/base-checkbox';
 
 export type BaseTogglePropsExcludedInputFields =
   | 'defaultValue'
@@ -8,9 +11,13 @@ export type BaseTogglePropsExcludedInputFields =
   | 'checked'
   | 'defaultChecked';
 
+export interface BaseToggleOnToggleHandlerParams {
+  checked: boolean;
+}
+
 export type BaseToggleOnToggleHandler = (
-  state: boolean,
-  event: ChangeEventHandler<HTMLInputElement>
+  event: ChangeEvent<InputEvent>,
+  params: BaseToggleOnToggleHandlerParams
 ) => unknown;
 
 export interface BaseToggleProps
@@ -22,8 +29,8 @@ export interface BaseToggleProps
 
 function BaseToggle({ toggled, defaultToggled, onToggle, ...props }: BaseToggleProps) {
   const onChange = useCallback(
-    (event) => {
-      onToggle?.(!event.target.checked, event);
+    (event: ChangeEvent<InputEvent>, { checked }: BaseCheckboxOnChangeHandlerParams) => {
+      onToggle?.(event, { checked });
     },
     [onToggle]
   );
