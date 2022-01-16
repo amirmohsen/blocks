@@ -7,31 +7,17 @@ See [Conventional Commits](https://conventionalcommits.org) for commit guideline
 
 **Note:** Version bump only for package @composed-components/base-button
 
-
-
-
-
 # [0.1.0-alpha.10](https://github.com/composed-components/composed-components/compare/@composed-components/base-button@0.1.0-alpha.9...@composed-components/base-button@0.1.0-alpha.10) (2022-01-15)
-
 
 ### Features
 
-* checkbox and toggle ([9364d24](https://github.com/composed-components/composed-components/commit/9364d2437ac46e585ed09fc97b7644b652c07901))
-
-
-
-
+- checkbox and toggle ([9364d24](https://github.com/composed-components/composed-components/commit/9364d2437ac46e585ed09fc97b7644b652c07901))
 
 # [0.1.0-alpha.9](https://github.com/composed-components/composed-components/compare/@composed-components/base-button@0.1.0-alpha.8...@composed-components/base-button@0.1.0-alpha.9) (2022-01-15)
 
-
 ### Bug Fixes
 
-* linting fixes ([444bebe](https://github.com/composed-components/composed-components/commit/444bebeabb203adecc47bd204c54212abd4e96f7))
-
-
-
-
+- linting fixes ([444bebe](https://github.com/composed-components/composed-components/commit/444bebeabb203adecc47bd204c54212abd4e96f7))
 
 # [0.1.0-alpha.8](https://github.com/composed-components/composed-components/compare/@composed-components/base-button@0.1.0-alpha.7...@composed-components/base-button@0.1.0-alpha.8) (2019-09-24)
 

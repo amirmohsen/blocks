@@ -1,0 +1,29 @@
+{
+  "name": "@composed-components/base-util-shared-styles",
+  "description": "Base Util Shared Styles",
+  "license": "MIT",
+  "author": "Amir Mohsen Abdolrazaghi <amirmohsen.a@gmail.com>",
+  "homepage": "https://github.com/composed-components/composed-components#readme",
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/composed-components/composed-components.git"
+  },
+  "bugs": {
+    "url": "https://github.com/composed-components/composed-components/issues"
+  },
+  "version": "0.1.0-alpha.0",
+  "main": "src/index.tsx",
+  "scripts": {
+    "build": "babel --root-mode upward --extensions \".ts,.tsx\" --ignore **/*.spec.ts,**/*.spec.tsx ./src -d ./lib",
+    "rm:lib": "rm -rf ./lib",
+    "test": "echo 'test'",
+    "postver": "cp package.json CHANGELOG.md README.md ./lib"
+  },
+  "peerDependencies": {
+    "styled-components": "^5"
+  },
+  "publishConfig": {
+    "access": "public",
+    "directory": "lib"
+  }
+}

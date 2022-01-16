@@ -1,6 +1,6 @@
 {
-  "name": "@composed-components/base-button",
-  "description": "Base Button",
+  "name": "@composed-components/base-radio-button",
+  "description": "Base Radio Button",
   "license": "MIT",
   "author": "Amir Mohsen Abdolrazaghi <amirmohsen.a@gmail.com>",
   "homepage": "https://github.com/composed-components/composed-components#readme",
@@ -11,13 +11,17 @@
   "bugs": {
     "url": "https://github.com/composed-components/composed-components/issues"
   },
-  "version": "0.1.0-alpha.11",
+  "version": "0.1.0-alpha.0",
   "main": "src/index.tsx",
   "scripts": {
     "build": "babel --root-mode upward --extensions \".ts,.tsx\" --ignore **/*.spec.ts,**/*.spec.tsx ./src -d ./lib",
     "rm:lib": "rm -rf ./lib",
     "test": "echo 'test'",
     "postver": "cp package.json CHANGELOG.md README.md ./lib"
+  },
+  "dependencies": {
+    "@composed-components/base-util-shared-components": "^0.1.0-alpha.0",
+    "json-stringify-safe": "^5.0.1"
   },
   "peerDependencies": {
     "react": "^17",
@@ -27,5 +31,8 @@
   "publishConfig": {
     "access": "public",
     "directory": "lib"
+  },
+  "devDependencies": {
+    "@types/json-stringify-safe": "^5.0.0"
   }
 }

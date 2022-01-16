@@ -2,6 +2,7 @@
   "name": "composed-components",
   "private": true,
   "workspaces": [
+    "packages/base/utils/*",
     "packages/base/*",
     "packages/*"
   ],

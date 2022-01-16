@@ -34,6 +34,7 @@ module.exports = {
         'plugin:prettier/recommended',
       ],
       rules: {
+        '@typescript-eslint/indent': ['off'],
         'react/jsx-props-no-spreading': ['off'],
         'import/extensions': ['off'],
         'react/jsx-indent': ['off'],
@@ -45,7 +46,6 @@ module.exports = {
           },
         ],
         indent: 'off',
-        '@typescript-eslint/indent': ['error', 2],
         'react-hooks/rules-of-hooks': 'error',
         'react-hooks/exhaustive-deps': 'warn',
       },

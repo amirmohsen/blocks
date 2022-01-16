@@ -1,6 +1,6 @@
 {
-  "name": "@composed-components/base-checkbox",
-  "description": "Base Checkbox",
+  "name": "@composed-components/base-toggle",
+  "description": "Base Toggle",
   "license": "MIT",
   "author": "Amir Mohsen Abdolrazaghi <amirmohsen.a@gmail.com>",
   "homepage": "https://github.com/composed-components/composed-components#readme",
@@ -27,5 +27,13 @@
   "publishConfig": {
     "access": "public",
     "directory": "lib"
+  },
+  "dependencies": {
+    "@composed-components/base-checkbox": "^0.1.0-alpha.3",
+    "@composed-components/base-util-shared-components": "^0.1.0-alpha.0",
+    "json-stringify-safe": "^5.0.1"
+  },
+  "devDependencies": {
+    "@types/json-stringify-safe": "^5.0.0"
   }
 }

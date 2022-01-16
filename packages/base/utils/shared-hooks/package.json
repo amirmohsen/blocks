@@ -1,6 +1,6 @@
 {
-  "name": "@composed-components/base-toggle",
-  "description": "Base Toggle",
+  "name": "@composed-components/base-util-shared-hooks",
+  "description": "Base Util Shared Hooks",
   "license": "MIT",
   "author": "Amir Mohsen Abdolrazaghi <amirmohsen.a@gmail.com>",
   "homepage": "https://github.com/composed-components/composed-components#readme",
@@ -11,7 +11,7 @@
   "bugs": {
     "url": "https://github.com/composed-components/composed-components/issues"
   },
-  "version": "0.1.0-alpha.3",
+  "version": "0.1.0-alpha.0",
   "main": "src/index.tsx",
   "scripts": {
     "build": "babel --root-mode upward --extensions \".ts,.tsx\" --ignore **/*.spec.ts,**/*.spec.tsx ./src -d ./lib",
@@ -20,15 +20,10 @@
     "postver": "cp package.json CHANGELOG.md README.md ./lib"
   },
   "peerDependencies": {
-    "react": "^17",
-    "react-dom": "^17",
-    "styled-components": "^5"
+    "react": "^17"
   },
   "publishConfig": {
     "access": "public",
     "directory": "lib"
-  },
-  "dependencies": {
-    "@composed-components/base-checkbox": "^0.1.0-alpha.3"
   }
 }

@@ -1,8 +1,6 @@
-import styled from 'styled-components';
+import { css } from 'styled-components';
 
-const BaseButton = styled.button.attrs({
-  type: 'button',
-})`
+const hideNativeAppearance = css`
   display: block;
   background: none;
   border: none;
@@ -14,4 +12,4 @@ const BaseButton = styled.button.attrs({
   appearance: none;
 `;
 
-export default BaseButton;
+export default hideNativeAppearance;
