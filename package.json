@@ -2,13 +2,14 @@
   "name": "composed-components",
   "private": true,
   "workspaces": [
+    "packages/base/*",
     "packages/*"
   ],
   "repository": {
     "url": "https://github.com/composed-components/composed-components"
   },
   "scripts": {
-    "bootstrap": "lerna bootstrap",
+    "bootstrap": "yarn && lerna bootstrap",
     "lint": "yarn npm-run-all --continue-on-error pretty lint:*",
     "lint:js": "eslint --ext .js,.ts,.tsx --fix packages/ scripts/",
     "lint:css": "stylelint --allow-empty-input --fix \"packages/**/*.{ts,tsx}\"",
