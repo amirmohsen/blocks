@@ -30,6 +30,7 @@
   },
   "dependencies": {
     "@composed-components/base-checkbox": "^0.1.0-alpha.3",
+    "@composed-components/base-util-shared-components": "^0.1.0-alpha.0",
     "json-stringify-safe": "^5.0.1"
   },
   "devDependencies": {

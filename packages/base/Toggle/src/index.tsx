@@ -1,8 +1,6 @@
 import React, { ChangeEvent, useCallback } from 'react';
-import BaseCheckbox, {
-  BaseCheckboxOnChangeHandlerParams,
-  BaseCheckboxProps,
-} from '@composed-components/base-checkbox';
+import BaseCheckbox, { BaseCheckboxProps } from '@composed-components/base-checkbox';
+import { SharedSingleValueInputOnChangeHandlerParams } from '@composed-components/base-util-shared-components';
 
 export type BaseTogglePropsExcludedInputFields =
   | 'defaultValue'
@@ -29,7 +27,7 @@ export interface BaseToggleProps
 
 function BaseToggle({ toggled, defaultToggled, onToggle, ...props }: BaseToggleProps) {
   const onChange = useCallback(
-    (event: ChangeEvent<InputEvent>, { checked }: BaseCheckboxOnChangeHandlerParams) => {
+    (event: ChangeEvent<InputEvent>, { checked }: SharedSingleValueInputOnChangeHandlerParams) => {
       onToggle?.(event, { checked });
     },
     [onToggle]
