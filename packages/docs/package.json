@@ -12,15 +12,15 @@
   "bugs": {
     "url": "https://github.com/composed-components/composed-components/issues"
   },
-  "version": "0.1.0-alpha.12",
+  "version": "0.1.0-alpha.13",
   "main": "src/index.tsx",
   "dependencies": {
-    "@composed-components/base-button": "^0.1.0-alpha.12",
-    "@composed-components/base-checkbox": "^0.1.0-alpha.4",
-    "@composed-components/base-option": "^0.1.0-alpha.0",
-    "@composed-components/base-radio-button": "^0.1.0-alpha.1",
-    "@composed-components/base-select": "^0.1.0-alpha.0",
-    "@composed-components/base-toggle": "^0.1.0-alpha.4",
+    "@composed-components/base-button": "^0.1.0-alpha.13",
+    "@composed-components/base-checkbox": "^0.1.0-alpha.5",
+    "@composed-components/base-option": "^0.1.0-alpha.1",
+    "@composed-components/base-radio-button": "^0.1.0-alpha.2",
+    "@composed-components/base-select": "^0.1.0-alpha.1",
+    "@composed-components/base-toggle": "^0.1.0-alpha.5",
     "@types/styled-components": "^5.1.20",
     "react": "^17.0.2",
     "react-dom": "^17.0.2",

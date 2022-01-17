@@ -11,7 +11,7 @@
   "bugs": {
     "url": "https://github.com/composed-components/composed-components/issues"
   },
-  "version": "0.1.0-alpha.4",
+  "version": "0.1.0-alpha.5",
   "main": "src/index.tsx",
   "scripts": {
     "build": "babel --root-mode upward --extensions \".ts,.tsx\" --ignore **/*.spec.ts,**/*.spec.tsx ./src -d ./lib",
@@ -29,8 +29,8 @@
     "directory": "lib"
   },
   "dependencies": {
-    "@composed-components/base-checkbox": "^0.1.0-alpha.4",
-    "@composed-components/base-util-shared-components": "^0.1.0-alpha.1",
-    "@composed-components/base-util-shared-helpers": "0.1.0-alpha.0"
+    "@composed-components/base-checkbox": "^0.1.0-alpha.5",
+    "@composed-components/base-util-shared-components": "^0.1.0-alpha.2",
+    "@composed-components/base-util-shared-helpers": "^0.1.0-alpha.1"
   }
 }
