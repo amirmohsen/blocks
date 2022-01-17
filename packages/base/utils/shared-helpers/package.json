@@ -1,6 +1,6 @@
 {
-  "name": "@composed-components/base-util-shared-components",
-  "description": "Base Util Shared Components",
+  "name": "@composed-components/base-util-shared-helpers",
+  "description": "Base Util Shared Helpers",
   "license": "MIT",
   "author": "Amir Mohsen Abdolrazaghi <amirmohsen.a@gmail.com>",
   "homepage": "https://github.com/composed-components/composed-components#readme",
@@ -11,7 +11,7 @@
   "bugs": {
     "url": "https://github.com/composed-components/composed-components/issues"
   },
-  "version": "0.1.0-alpha.1",
+  "version": "0.1.0-alpha.0",
   "main": "src/index.tsx",
   "scripts": {
     "build": "babel --root-mode upward --extensions \".ts,.tsx\" --ignore **/*.spec.ts,**/*.spec.tsx ./src -d ./lib",
@@ -20,12 +20,10 @@
     "postver": "cp package.json CHANGELOG.md README.md ./lib"
   },
   "dependencies": {
-    "@composed-components/base-util-shared-helpers": "0.1.0-alpha.0",
-    "@composed-components/base-util-shared-styles": "^0.1.0-alpha.1"
+    "json-stringify-safe": "^5.0.1"
   },
-  "peerDependencies": {
-    "react": "^17",
-    "styled-components": "^5"
+  "devDependencies": {
+    "@types/json-stringify-safe": "^5.0.0"
   },
   "publishConfig": {
     "access": "public",

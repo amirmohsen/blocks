@@ -1,7 +1,7 @@
 import React, { ChangeEvent, InputHTMLAttributes, useCallback } from 'react';
 import styled from 'styled-components';
 import { hideNativeAppearance } from '@composed-components/base-util-shared-styles';
-import stringify from 'json-stringify-safe';
+import { serialize } from '@composed-components/base-util-shared-helpers';
 
 const StyledSharedSingleValueInput = styled.input`
   ${hideNativeAppearance}
@@ -38,7 +38,7 @@ function SharedSingleValueInput({ onChange, value, ...props }: SharedSingleValue
   return (
     <StyledSharedSingleValueInput
       {...(props as unknown)}
-      value={value === undefined ? undefined : stringify(value)}
+      value={serialize(value)}
       onChange={onChange ? realOnChange : undefined}
     />
   );
