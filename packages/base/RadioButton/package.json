@@ -20,8 +20,7 @@
     "postver": "cp package.json CHANGELOG.md README.md ./lib"
   },
   "dependencies": {
-    "@composed-components/base-util-shared-components": "^0.1.0-alpha.1",
-    "json-stringify-safe": "^5.0.1"
+    "@composed-components/base-util-shared-components": "^0.1.0-alpha.1"
   },
   "peerDependencies": {
     "react": "^17",
@@ -31,8 +30,5 @@
   "publishConfig": {
     "access": "public",
     "directory": "lib"
-  },
-  "devDependencies": {
-    "@types/json-stringify-safe": "^5.0.0"
   }
 }

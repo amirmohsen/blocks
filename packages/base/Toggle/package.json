@@ -31,9 +31,6 @@
   "dependencies": {
     "@composed-components/base-checkbox": "^0.1.0-alpha.4",
     "@composed-components/base-util-shared-components": "^0.1.0-alpha.1",
-    "json-stringify-safe": "^5.0.1"
-  },
-  "devDependencies": {
-    "@types/json-stringify-safe": "^5.0.0"
+    "@composed-components/base-util-shared-helpers": "0.1.0-alpha.0"
   }
 }

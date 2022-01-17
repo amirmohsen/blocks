@@ -1,6 +1,7 @@
 import React, { ChangeEvent, useCallback } from 'react';
 import BaseCheckbox, { BaseCheckboxProps } from '@composed-components/base-checkbox';
 import { SharedSingleValueInputOnChangeHandlerParams } from '@composed-components/base-util-shared-components';
+import { serialize } from '@composed-components/base-util-shared-helpers';
 
 export type BaseTogglePropsExcludedInputFields =
   | 'defaultValue'
@@ -38,7 +39,7 @@ function BaseToggle({ toggled, defaultToggled, onToggle, ...props }: BaseToggleP
       onChange={onToggle ? onChange : undefined}
       checked={toggled}
       defaultChecked={defaultToggled}
-      value={JSON.stringify(toggled ?? defaultToggled)}
+      value={serialize(toggled ?? defaultToggled)}
     />
   );
 }

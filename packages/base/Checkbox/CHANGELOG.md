@@ -5,14 +5,9 @@ See [Conventional Commits](https://conventionalcommits.org) for commit guideline
 
 # [0.1.0-alpha.4](https://github.com/composed-components/composed-components/compare/@composed-components/base-checkbox@0.1.0-alpha.3...@composed-components/base-checkbox@0.1.0-alpha.4) (2022-01-16)
 
-
 ### Features
 
-* radio button added, any data functionality, shared code ([bd82672](https://github.com/composed-components/composed-components/commit/bd826724416433cd8181b214df75f37b1e1afd4d))
-
-
-
-
+- radio button added, any data functionality, shared code ([bd82672](https://github.com/composed-components/composed-components/commit/bd826724416433cd8181b214df75f37b1e1afd4d))
 
 # [0.1.0-alpha.3](https://github.com/composed-components/composed-components/compare/@composed-components/base-checkbox@0.1.0-alpha.2...@composed-components/base-checkbox@0.1.0-alpha.3) (2022-01-16)
 
