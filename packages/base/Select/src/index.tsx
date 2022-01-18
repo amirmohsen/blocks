@@ -29,7 +29,7 @@ function BaseSelect({ onChange, value, ...props }: BaseSelectProps) {
   );
   return (
     <StyledBaseSelect
-      {...(props as unknown)}
+      {...(props as Record<string, unknown>)}
       value={serialize(value)}
       onChange={onChange ? realOnChange : undefined}
     />

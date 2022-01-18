@@ -12,7 +12,7 @@ export type BaseRadioButtonProps = Omit<
 >;
 
 function BaseRadioButton(props: BaseRadioButtonProps) {
-  return <SharedSingleValueInput {...(props as unknown)} type="radio" />;
+  return <SharedSingleValueInput {...(props as Record<string, unknown>)} type="radio" />;
 }
 
 export default BaseRadioButton;
