@@ -3,6 +3,17 @@
 All notable changes to this project will be documented in this file.
 See [Conventional Commits](https://conventionalcommits.org) for commit guidelines.
 
+# [0.1.0-alpha.3](https://github.com/composed-components/composed-components/compare/@composed-components/base-util-shared-components@0.1.0-alpha.2...@composed-components/base-util-shared-components@0.1.0-alpha.3) (2022-01-19)
+
+
+### Bug Fixes
+
+* upgrade deps and linting ([4cf367e](https://github.com/composed-components/composed-components/commit/4cf367ef75cdf4c302dedb462cfaf693be2193c0))
+
+
+
+
+
 # [0.1.0-alpha.2](https://github.com/composed-components/composed-components/compare/@composed-components/base-util-shared-components@0.1.0-alpha.1...@composed-components/base-util-shared-components@0.1.0-alpha.2) (2022-01-17)
 
 ### Features

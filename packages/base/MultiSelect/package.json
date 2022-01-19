@@ -11,7 +11,7 @@
   "bugs": {
     "url": "https://github.com/composed-components/composed-components/issues"
   },
-  "version": "0.1.0-alpha.0",
+  "version": "0.1.0-alpha.1",
   "main": "src/index.tsx",
   "scripts": {
     "build": "babel --root-mode upward --extensions \".ts,.tsx\" --ignore **/*.spec.ts,**/*.spec.tsx ./src -d ./lib",
@@ -20,9 +20,9 @@
     "postver": "cp package.json CHANGELOG.md README.md ./lib"
   },
   "dependencies": {
-    "@composed-components/base-option": "^0.1.0-alpha.1",
-    "@composed-components/base-util-shared-helpers": "^0.1.0-alpha.1",
-    "@composed-components/base-util-shared-styles": "^0.1.0-alpha.2",
+    "@composed-components/base-option": "^0.1.0-alpha.2",
+    "@composed-components/base-util-shared-helpers": "^0.1.0-alpha.2",
+    "@composed-components/base-util-shared-styles": "^0.1.0-alpha.3",
     "react-is": "^17.0.2"
   },
   "peerDependencies": {
