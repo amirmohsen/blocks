@@ -20,7 +20,8 @@
     "postver": "cp package.json CHANGELOG.md README.md ./lib"
   },
   "dependencies": {
-    "@composed-components/base-util-shared-helpers": "^0.1.0-alpha.1"
+    "@composed-components/base-util-shared-helpers": "^0.1.0-alpha.1",
+    "memoize-one": "^6.0.0"
   },
   "peerDependencies": {
     "react": "^17"

@@ -1,10 +1,15 @@
 import React, { InputHTMLAttributes } from 'react';
-import { serialize } from '@composed-components/base-util-shared-helpers';
 
-export type BaseOptionProps = InputHTMLAttributes<HTMLInputElement>;
-
-function BaseOption({ value, ...props }: BaseOptionProps) {
-  return <option {...(props as unknown)} value={serialize(value)} />;
+export interface BaseOptionProps extends Omit<InputHTMLAttributes<HTMLInputElement>, 'value'> {
+  serialized?: string;
+  value?: unknown;
 }
 
-export default BaseOption;
+export default function BaseOption({ value, serialized, ...props }: BaseOptionProps) {
+  return (
+    <option
+      {...(props as Record<string, unknown>)}
+      value={typeof value === 'string' ? value : serialized}
+    />
+  );
+}

@@ -13,32 +13,40 @@ import { isElement } from 'react-is';
 import { hideNativeAppearance } from '@composed-components/base-util-shared-styles';
 import { serialize } from '@composed-components/base-util-shared-helpers';
 
-const StyledBaseSelect = styled.select`
+const StyledBaseMultiSelect = styled.select`
   ${hideNativeAppearance}
 `;
 
-export type BaseSelectPropsExcludedInputFields = 'value' | 'onChange' | 'multiple';
+export type BaseMultiSelectPropsExcludedInputFields = 'value' | 'onChange' | 'multiple';
 
-export interface BaseSelectOnChangeHandlerParams {
-  value: unknown;
+export interface BaseMultiSelectOnChangeHandlerParams {
+  value: unknown[];
 }
 
-export interface BaseSelectProps
-  extends Omit<InputHTMLAttributes<HTMLInputElement>, BaseSelectPropsExcludedInputFields> {
-  onChange?: (event: ChangeEvent<InputEvent>, params: BaseSelectOnChangeHandlerParams) => unknown;
-  value?: unknown;
+export interface BaseMultiSelectProps
+  extends Omit<InputHTMLAttributes<HTMLInputElement>, BaseMultiSelectPropsExcludedInputFields> {
+  onChange?: (
+    event: ChangeEvent<InputEvent>,
+    params: BaseMultiSelectOnChangeHandlerParams
+  ) => unknown;
+  value?: unknown[];
 }
 
-export interface BaseSelectMemoizedValues {
+export interface BaseMultiSelectMemoizedValues {
   options: ReactElement[];
   optionMap: Record<string, unknown>;
-  selectedOption?: string;
+  selectedOptions: string[];
 }
 
-export default function BaseSelect({ onChange, value, children, ...props }: BaseSelectProps) {
-  const { options, optionMap, selectedOption } = useMemo(() => {
+export default function BaseMultiSelect({
+  onChange,
+  value,
+  children,
+  ...props
+}: BaseMultiSelectProps) {
+  const { options, optionMap, selectedOptions } = useMemo(() => {
     return Children.toArray(children).reduce(
-      (acc: BaseSelectMemoizedValues, child: ReactNode): BaseSelectMemoizedValues => {
+      (acc: BaseMultiSelectMemoizedValues, child: ReactNode): BaseMultiSelectMemoizedValues => {
         if (!isElement(child)) {
           return acc;
         }
@@ -50,8 +58,8 @@ export default function BaseSelect({ onChange, value, children, ...props }: Base
           return acc;
         }
 
-        if (value === childValue) {
-          acc.selectedOption = serialized;
+        if (value?.includes(childValue)) {
+          acc.selectedOptions.push(serialized);
         }
 
         acc.optionMap[serialized] = childValue;
@@ -62,7 +70,7 @@ export default function BaseSelect({ onChange, value, children, ...props }: Base
       {
         options: [],
         optionMap: {},
-        selectedOption: undefined,
+        selectedOptions: [],
       }
     );
   }, [children, value]);
@@ -70,19 +78,20 @@ export default function BaseSelect({ onChange, value, children, ...props }: Base
   const realOnChange = useCallback(
     (event) => {
       onChange?.(event, {
-        value: optionMap?.[event.target.value],
+        value: event.target.value?.map((val: string) => optionMap?.[val]) ?? [],
       });
     },
     [onChange, optionMap]
   );
 
   return (
-    <StyledBaseSelect
+    <StyledBaseMultiSelect
       {...(props as Record<string, unknown>)}
-      value={selectedOption}
+      value={selectedOptions}
       onChange={onChange ? realOnChange : undefined}
+      multiple
     >
       {options}
-    </StyledBaseSelect>
+    </StyledBaseMultiSelect>
   );
 }

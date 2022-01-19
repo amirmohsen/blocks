@@ -12,7 +12,7 @@ export type BaseCheckboxProps = Omit<
 >;
 
 function BaseCheckbox(props: BaseCheckboxProps) {
-  return <SharedSingleValueInput {...(props as unknown)} type="checkbox" />;
+  return <SharedSingleValueInput {...(props as Record<string, unknown>)} type="checkbox" />;
 }
 
 export default BaseCheckbox;
