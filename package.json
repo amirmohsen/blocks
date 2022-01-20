@@ -11,7 +11,7 @@
   },
   "scripts": {
     "bootstrap": "yarn && lerna bootstrap",
-    "bootstrap:ci": "yarn --frozen-lockfile && lerna bootstrap --frozen-lockfile",
+    "bootstrap:ci": "yarn --frozen-lockfile && lerna bootstrap -- --frozen-lockfile",
     "lint": "yarn npm-run-all --continue-on-error lint:* lint:types",
     "lint-fix": "yarn npm-run-all --continue-on-error lint-fix:* lint:types",
     "lint:js": "eslint --ext .js,.ts,.tsx packages/ scripts/",
