@@ -3,6 +3,14 @@
 All notable changes to this project will be documented in this file.
 See [Conventional Commits](https://conventionalcommits.org) for commit guidelines.
 
+# [0.1.0-alpha.18](https://github.com/composed-components/composed-components/compare/@composed-components/docs@0.1.0-alpha.17...@composed-components/docs@0.1.0-alpha.18) (2022-01-23)
+
+**Note:** Version bump only for package @composed-components/docs
+
+
+
+
+
 # [0.1.0-alpha.17](https://github.com/composed-components/composed-components/compare/@composed-components/docs@0.1.0-alpha.16...@composed-components/docs@0.1.0-alpha.17) (2022-01-23)
 
 **Note:** Version bump only for package @composed-components/docs
