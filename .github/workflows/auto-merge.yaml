@@ -4,8 +4,6 @@ on:
   pull_request:
     branches: [main]
 
-  workflow_dispatch:
-
 jobs:
   auto-merge:
     runs-on: ubuntu-latest
