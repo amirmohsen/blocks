@@ -12,7 +12,7 @@
   "bugs": {
     "url": "https://github.com/composed-components/composed-components/issues"
   },
-  "version": "0.1.0-alpha.16",
+  "version": "0.1.0-alpha.17",
   "main": "src/index.tsx",
   "dependencies": {
     "@composed-components/base-button": "^0.1.0-alpha.14",
