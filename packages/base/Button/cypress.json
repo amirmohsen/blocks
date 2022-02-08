@@ -1,0 +1,8 @@
+{
+  "integrationFolder": "src",
+  "testFiles": "**/*.spec.ts",
+  "fixturesFolder": false,
+  "pluginsFile": false,
+  "supportFile": false,
+  "video": false
+}
