@@ -20,7 +20,9 @@ function Docs() {
   return (
     <>
       <Separator label="Base Button">
-        <BaseButton>Button Text</BaseButton>
+        <BaseButton data-test-id="base-button" onClick={() => console.log('Button Clicked')}>
+          Button Text
+        </BaseButton>
       </Separator>
       <Separator label="Base Checkbox">
         <BaseCheckbox />
