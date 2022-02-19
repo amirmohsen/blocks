@@ -3,6 +3,17 @@
 All notable changes to this project will be documented in this file.
 See [Conventional Commits](https://conventionalcommits.org) for commit guidelines.
 
+# [0.1.0-alpha.20](https://github.com/composed-components/composed-components/compare/@composed-components/docs@0.1.0-alpha.19...@composed-components/docs@0.1.0-alpha.20) (2022-02-19)
+
+
+### Bug Fixes
+
+* linting ([c2d5370](https://github.com/composed-components/composed-components/commit/c2d5370d6be91585d978ae95271744beaefbd7fb))
+
+
+
+
+
 # [0.1.0-alpha.19](https://github.com/composed-components/composed-components/compare/@composed-components/docs@0.1.0-alpha.18...@composed-components/docs@0.1.0-alpha.19) (2022-01-23)
 
 **Note:** Version bump only for package @composed-components/docs

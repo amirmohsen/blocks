@@ -3,6 +3,14 @@
 All notable changes to this project will be documented in this file.
 See [Conventional Commits](https://conventionalcommits.org) for commit guidelines.
 
+# [0.1.0-alpha.15](https://github.com/composed-components/composed-components/compare/@composed-components/base-button@0.1.0-alpha.14...@composed-components/base-button@0.1.0-alpha.15) (2022-02-19)
+
+**Note:** Version bump only for package @composed-components/base-button
+
+
+
+
+
 # [0.1.0-alpha.14](https://github.com/composed-components/composed-components/compare/@composed-components/base-button@0.1.0-alpha.13...@composed-components/base-button@0.1.0-alpha.14) (2022-01-19)
 
 
