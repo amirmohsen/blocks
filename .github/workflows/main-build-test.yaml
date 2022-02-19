@@ -29,5 +29,11 @@ jobs:
       - name: Build
         run: yarn build
 
+      - name: Start Docs
+        run: yarn docs
+
       - name: Test
         run: yarn test
+
+      - name: Terminate Docs
+        run: yarn docs:terminate

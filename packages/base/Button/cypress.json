@@ -4,5 +4,7 @@
   "fixturesFolder": false,
   "pluginsFile": false,
   "supportFile": false,
-  "video": false
+  "screenshotsFolder": "out/cypress/screenshots",
+  "downloadsFolder": "out/cypress/downloads",
+  "videosFolder": "out/cypress/videos"
 }
