@@ -17,10 +17,14 @@ function Docs() {
   const onChangeMulti = useCallback((event, { value }) => {
     setOptions(value);
   }, []);
+  // eslint-disable-next-line no-console
+  const onBaseButtonClick = useCallback(() => console.log('Button Clicked'), []);
   return (
     <>
       <Separator label="Base Button">
-        <BaseButton>Button Text</BaseButton>
+        <BaseButton data-test-id="base-button" onClick={onBaseButtonClick}>
+          Button Text
+        </BaseButton>
       </Separator>
       <Separator label="Base Checkbox">
         <BaseCheckbox />

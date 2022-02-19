@@ -1,0 +1,10 @@
+{
+  "integrationFolder": "src",
+  "testFiles": "**/*.spec.ts",
+  "fixturesFolder": false,
+  "pluginsFile": false,
+  "supportFile": false,
+  "screenshotsFolder": "out/cypress/screenshots",
+  "downloadsFolder": "out/cypress/downloads",
+  "videosFolder": "out/cypress/videos"
+}

@@ -11,6 +11,7 @@
     "jsx": "react",
     "module": "esnext",
     "lib": ["dom", "esnext"],
+    "types": ["cypress", "node"],
     "declaration": true,
     "sourceMap": true
   },
