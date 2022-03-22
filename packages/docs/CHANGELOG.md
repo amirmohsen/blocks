@@ -3,6 +3,28 @@
 All notable changes to this project will be documented in this file.
 See [Conventional Commits](https://conventionalcommits.org) for commit guidelines.
 
+# 0.3.0 (2022-03-22)
+
+
+### Bug Fixes
+
+* linting ([c2d5370](https://github.com/composed-components/composed-components/commit/c2d5370d6be91585d978ae95271744beaefbd7fb))
+* linting fixes ([444bebe](https://github.com/composed-components/composed-components/commit/444bebeabb203adecc47bd204c54212abd4e96f7))
+* update deps ([03cd379](https://github.com/composed-components/composed-components/commit/03cd379a8f305fb434dd89d872b6064027b568d1))
+* upgrade deps and linting ([4cf367e](https://github.com/composed-components/composed-components/commit/4cf367ef75cdf4c302dedb462cfaf693be2193c0))
+
+
+### Features
+
+* checkbox and toggle ([9364d24](https://github.com/composed-components/composed-components/commit/9364d2437ac46e585ed09fc97b7644b652c07901))
+* multiselect ([760ea47](https://github.com/composed-components/composed-components/commit/760ea472f26830270f3521e24c9faa79bbe14f9e))
+* radio button added, any data functionality, shared code ([bd82672](https://github.com/composed-components/composed-components/commit/bd826724416433cd8181b214df75f37b1e1afd4d))
+* select ([2e39f62](https://github.com/composed-components/composed-components/commit/2e39f6271dce85d836952faaf1a5c2e010e040b1))
+
+
+
+
+
 # [0.1.0-alpha.19](https://github.com/composed-components/composed-components/compare/@composed-components/docs@0.1.0-alpha.18...@composed-components/docs@0.1.0-alpha.19) (2022-01-23)
 
 **Note:** Version bump only for package @composed-components/docs
