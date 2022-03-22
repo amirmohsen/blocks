@@ -48,6 +48,8 @@ module.exports = {
         indent: 'off',
         'react-hooks/rules-of-hooks': 'error',
         'react-hooks/exhaustive-deps': 'warn',
+        'react/function-component-definition': ['off'],
+        'import/no-extraneous-dependencies': ['off'], // need a better solution
       },
     },
   ],
