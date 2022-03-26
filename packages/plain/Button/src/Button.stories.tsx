@@ -13,4 +13,7 @@ const Template: ComponentStory<typeof PlainButton> = (args) => <PlainButton {...
 export const Default = Template.bind({});
 Default.args = {
   children: 'Plain Button',
+  'data-test-id': 'plain-button-default',
+  // eslint-disable-next-line no-console
+  onClick: () => console.log('Plain Button Clicked'),
 };

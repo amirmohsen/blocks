@@ -16,8 +16,6 @@
   "scripts": {
     "build": "babel --root-mode upward --extensions \".ts,.tsx\" --ignore **/*.spec.ts,**/*.spec.tsx ./src -d ./lib",
     "rm:lib": "rm -rf ./lib",
-    "test": "cypress run",
-    "test:watch": "cypress open",
     "postver": "cp package.json CHANGELOG.md README.md ./lib"
   },
   "dependencies": {
