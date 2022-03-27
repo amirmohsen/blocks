@@ -11,7 +11,7 @@
   "bugs": {
     "url": "https://github.com/composed-components/composed-components/issues"
   },
-  "version": "0.3.0",
+  "version": "0.3.1",
   "main": "src/index.tsx",
   "scripts": {
     "build": "babel --root-mode upward --extensions \".ts,.tsx\" --ignore **/*.spec.ts,**/*.spec.tsx ./src -d ./lib",
@@ -19,7 +19,7 @@
     "postver": "cp package.json CHANGELOG.md README.md ./lib"
   },
   "dependencies": {
-    "@composed-components/base-button": "^0.3.0"
+    "@composed-components/base-button": "^0.3.1"
   },
   "peerDependencies": {
     "react": "^17",

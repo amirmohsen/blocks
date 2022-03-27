@@ -12,7 +12,7 @@
   "bugs": {
     "url": "https://github.com/composed-components/composed-components/issues"
   },
-  "version": "0.3.0",
+  "version": "0.3.1",
   "scripts": {
     "test:functional": "cypress run --browser chrome",
     "test:functional:watch": "cypress open --browser chrome"

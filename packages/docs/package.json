@@ -12,10 +12,10 @@
   "bugs": {
     "url": "https://github.com/composed-components/composed-components/issues"
   },
-  "version": "0.3.0",
+  "version": "0.3.1",
   "main": "src/index.tsx",
   "dependencies": {
-    "@composed-components/base-button": "^0.3.0",
+    "@composed-components/base-button": "^0.3.1",
     "@composed-components/base-checkbox": "^0.3.0",
     "@composed-components/base-multi-select": "^0.3.0",
     "@composed-components/base-option": "^0.3.0",

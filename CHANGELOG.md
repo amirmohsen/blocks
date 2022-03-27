@@ -3,6 +3,18 @@
 All notable changes to this project will be documented in this file.
 See [Conventional Commits](https://conventionalcommits.org) for commit guidelines.
 
+## [0.3.1](https://github.com/composed-components/composed-components/compare/v0.3.0...v0.3.1) (2022-03-27)
+
+
+### Bug Fixes
+
+* amend storybook:serve command ([9a4f8a3](https://github.com/composed-components/composed-components/commit/9a4f8a3152109d1be609f4fce662e264b790a6dc))
+* cicd ([7a84c69](https://github.com/composed-components/composed-components/commit/7a84c6906887713e13286eb10e9660926e916090))
+
+
+
+
+
 # 0.3.0 (2022-03-22)
 
 
