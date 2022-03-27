@@ -27,6 +27,7 @@
     "docs:terminate": "kill -9 $(lsof -t -i:8080)",
     "rm:lib": "lerna run --parallel rm:lib",
     "test": "lerna run --parallel test",
+    "test:functional": "lerna run --parallel test:functional",
     "build": "lerna run --parallel build",
     "packages:version": "lerna version --yes --conventional-commits --create-release github",
     "packages:postversion": "lerna run --parallel postver",
