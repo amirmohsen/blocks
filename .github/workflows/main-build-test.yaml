@@ -20,20 +20,32 @@ jobs:
         with:
           node-version: 16.13
 
+      - name: Install Chrome
+        uses: browser-actions/setup-chrome@latest
+      
+      - name: Chrome Version
+        run: chrome --version
+
       - name: Install
         run: yarn bootstrap:ci
 
       - name: Lint
         run: yarn lint
 
-      - name: Build
+      - name: Build Packages
         run: yarn build
 
-      - name: Start Docs
-        run: yarn docs
+      - name: Build Storybook
+        run: yarn storybook:build
 
-      - name: Test
+      - name: Start Storybook
+        run: yarn storybook:serve:background
+
+      - name: Unit Tests
         run: yarn test
 
-      - name: Terminate Docs
-        run: yarn docs:terminate
+      - name: Functional Tests
+        run: yarn test:functional
+
+      - name: Terminate Storybook
+        run: yarn storybook:terminate

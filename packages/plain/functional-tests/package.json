@@ -1,0 +1,20 @@
+{
+  "name": "@composed-components/plain-functional-tests",
+  "description": "Plain functional tests",
+  "license": "MIT",
+  "private": true,
+  "author": "Amir Mohsen Abdolrazaghi <amirmohsen.a@gmail.com>",
+  "homepage": "https://github.com/composed-components/composed-components#readme",
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/composed-components/composed-components.git"
+  },
+  "bugs": {
+    "url": "https://github.com/composed-components/composed-components/issues"
+  },
+  "version": "0.3.0",
+  "scripts": {
+    "test:functional": "cypress run --browser chrome",
+    "test:functional:watch": "cypress open --browser chrome"
+  }
+}

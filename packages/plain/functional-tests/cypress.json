@@ -1,10 +1,11 @@
 {
-  "integrationFolder": "src",
+  "baseUrl": "http://localhost:6006",
+  "integrationFolder": "tests",
   "testFiles": "**/*.spec.ts",
   "fixturesFolder": false,
   "pluginsFile": false,
-  "supportFile": false,
   "screenshotsFolder": "out/cypress/screenshots",
   "downloadsFolder": "out/cypress/downloads",
-  "videosFolder": "out/cypress/videos"
+  "videosFolder": "out/cypress/videos",
+  "supportFile": "support/index.ts"
 }

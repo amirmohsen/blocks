@@ -27,12 +27,16 @@
     "docs:terminate": "kill -9 $(lsof -t -i:8080)",
     "rm:lib": "lerna run --parallel rm:lib",
     "test": "lerna run --parallel test",
+    "test:functional": "lerna run --parallel test:functional",
     "build": "lerna run --parallel build",
     "packages:version": "lerna version --yes --conventional-commits --create-release github",
     "packages:postversion": "lerna run --parallel postver",
     "packages:publish": "lerna publish from-package --yes",
     "storybook": "start-storybook -p 6006",
-    "build:storybook": "build-storybook -o out/docs"
+    "storybook:build": "build-storybook -o out/docs",
+    "storybook:serve": "serve -l 6006 out/docs",
+    "storybook:serve:background": "yarn storybook:serve > /dev/null 2>&1 &",
+    "storybook:terminate": "kill -9 $(lsof -t -i:6006)"
   },
   "devDependencies": {
     "@babel/cli": "^7.16.8",
@@ -72,6 +76,7 @@
     "prettier": "2.5.1",
     "react": "^17.0.2",
     "react-dom": "^17.0.2",
+    "serve": "^13.0.2",
     "styled-components": "^5.3.3",
     "stylelint": "^14.2.0",
     "stylelint-config-prettier": "^9.0.3",
