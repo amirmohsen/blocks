@@ -33,7 +33,7 @@
     "packages:publish": "lerna publish from-package --yes",
     "storybook": "start-storybook -p 6006",
     "storybook:build": "build-storybook -o out/docs",
-    "storybook:serve": "serve -l 6006 out/docs",
+    "storybook:serve": "serve -l 6006 out/docs > /dev/null 2>&1 &",
     "storybook:terminate": "kill -9 $(lsof -t -i:6006)"
   },
   "devDependencies": {
