@@ -20,6 +20,12 @@ jobs:
         with:
           node-version: 16.13
 
+      - name: Install Chrome
+        uses: browser-actions/setup-chrome@latest
+      
+      - name: Chrome Version
+        run: chrome --version
+
       - name: Install
         run: yarn bootstrap:ci
 
@@ -33,7 +39,7 @@ jobs:
         run: yarn storybook:build
 
       - name: Start Storybook
-        run: ls -la out/docs && yarn storybook:serve
+        run: yarn storybook:serve:background
 
       - name: Unit Tests
         run: yarn test

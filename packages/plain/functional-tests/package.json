@@ -14,7 +14,7 @@
   },
   "version": "0.3.0",
   "scripts": {
-    "test:functional": "cypress run",
-    "test:functional:watch": "cypress open"
+    "test:functional": "cypress run --browser chrome",
+    "test:functional:watch": "cypress open --browser chrome"
   }
 }
