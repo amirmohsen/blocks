@@ -33,7 +33,7 @@ jobs:
         run: yarn storybook:build
 
       - name: Start Storybook
-        run: yarn storybook:serve
+        run: ls -la out/docs && yarn storybook:serve
 
       - name: Unit Tests
         run: yarn test
