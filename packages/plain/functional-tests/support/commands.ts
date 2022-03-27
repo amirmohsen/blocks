@@ -1,5 +1,5 @@
 Cypress.Commands.add('findStory', (story: string) => {
-  cy.visit(`/iframe.html?id=${story}`, {
+  cy.visit(`/iframe?id=${story}`, {
     onBeforeLoad(win) {
       cy.stub(win.console, 'log').as('consoleLog');
     },
