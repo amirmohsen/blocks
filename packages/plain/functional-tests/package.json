@@ -14,7 +14,7 @@
   },
   "version": "0.3.0",
   "scripts": {
-    "test": "cypress run",
-    "test:watch": "cypress open"
+    "test:functional": "cypress run",
+    "test:functional:watch": "cypress open"
   }
 }

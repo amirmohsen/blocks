@@ -26,14 +26,20 @@ jobs:
       - name: Lint
         run: yarn lint
 
-      - name: Build
+      - name: Build Packages
         run: yarn build
 
-      - name: Start Docs
-        run: yarn docs
+      - name: Build Storybook
+        run: yarn storybook:build
 
-      - name: Test
+      - name: Start Storybook
+        run: yarn storybook:serve
+
+      - name: Unit Tests
         run: yarn test
 
-      - name: Terminate Docs
-        run: yarn docs:terminate
+      - name: Functional Tests
+        run: yarn test:functional
+
+      - name: Terminate Storybook
+        run: yarn storybook:terminate
